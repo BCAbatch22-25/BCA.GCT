@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function() {
     footerYear.textContent = new Date().getFullYear();
   }
 
-   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function(e) {
       e.preventDefault();
       const target = document.querySelector(this.getAttribute('href'));
@@ -27,6 +27,9 @@ document.addEventListener('DOMContentLoaded', function() {
         currentSection = section.getAttribute('id');
       }
     });
+    if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight - 2) {
+      currentSection = 'contact';
+    }
     navLinks.forEach(link => {
       link.classList.remove('text-blue-600', 'active-nav');
       link.classList.add('text-gray-600', 'font-semibold');

@@ -13,8 +13,13 @@
   <style>
     body { font-family: 'Raleway', 'Josefin Sans', sans-serif; }
     @keyframes fadeIn { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+    @keyframes slideUp { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
     @keyframes navPulse { 0% { transform: scale(1); } 50% { transform: scale(1.1); } 100% { transform: scale(1); } }
-    .active-nav { transform: scale(1.1); box-shadow: 0 4px 8px rgba(0,0,0,0.3); transition: transform 0.3s ease, box-shadow 0.3s ease; }
+    .active-nav { /* For mobile nav only, desktop will override */ transform: scale(1.1); box-shadow: 0 4px 8px rgba(0,0,0,0.3); transition: transform 0.3s ease, box-shadow 0.3s ease; }
+    /* Override active effect on desktop nav */
+    .desktop-nav a.active-nav { transform: none !important; box-shadow: none !important; }
+    /* Extra animation for section titles */
+    .animate-slideUp { animation: slideUp 0.8s ease-out forwards; }
   </style>
 </head>
 <body class="bg-gray-50">
@@ -83,8 +88,8 @@
             <img src="https://www.sikshapedia.com/public/data/colleges/government-arts-and-science-college-tanur-malappuram-kerala/government-arts-and-science-college-tanur-malappuram-kerala-banner.webp" alt="College Campus" class="rounded-lg shadow-lg w-full h-[400px] object-cover">
           </div>
           <div class="relative z-10">
-            <h2 class="text-3xl font-bold mb-6 text-gray-800">About BCA Department</h2>
-            <h3 class="text-xl font-semibold mb-4 text-blue-600">Government Arts And Science College, Tanur BCA Eligibility and Highlights 2025</h3>
+            <h2 class="text-3xl font-bold mb-6 text-gray-800 animate-slideUp">About BCA Department</h2>
+            <h3 class="text-xl font-semibold mb-4 text-blue-600 animate-slideUp">Government Arts And Science College, Tanur BCA Eligibility and Highlights 2025</h3>
             <p class="text-gray-600 mb-6 leading-relaxed">BCA at Government Arts And Science College, Tanur is a Full Time programme offered for a duration of 4 years. Government Arts And Science College, Tanur BCA admission is done based on scores in accepted exams (CBSE 12th and State 12th).</p>
             <div class="grid grid-cols-2 gap-4">
               <div class="bg-white p-4 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300">
@@ -106,7 +111,7 @@
             </div>
             <div class="mt-8">
               <div class="relative inline-flex items-center justify-center gap-4 group">
-                <div class="absolute inset-0 duration-1000 opacity-60 transition-all bg-gradient-to-r from-indigo-500 via-pink-500 to-yellow-400 rounded-xl blur-lg filter group-hover:opacity-100 group-hover:duration-200"></div>
+                <div class="absolute inset-0 duration-1000 opacity-60 transition-all bg-gradient-to-r from-cyan-500 to-blue-500 rounded-xl blur-lg filter group-hover:opacity-100 group-hover:duration-200"></div>
                 <a role="button" class="group relative inline-flex items-center justify-center text-base rounded-xl bg-blue-600 px-8 py-3 font-semibold text-white transition-all duration-200 hover:bg-blue-700 hover:shadow-lg hover:-translate-y-0.5 hover:shadow-gray-600/30" title="payment" href="#">
                   Get Started For Free
                   <svg aria-hidden="true" viewBox="0 0 10 10" height="10" width="10" fill="none" class="mt-0.5 ml-2 -mr-1 stroke-white stroke-2">
@@ -121,7 +126,7 @@
       </div>
     </section>
     <section id="resources" class="container mx-auto py-16 px-4">
-      <h2 class="text-3xl font-bold mb-8 text-center">Study Resources</h2>
+      <h2 class="text-3xl font-bold mb-8 text-center uppercase tracking-wide animate-slideUp">Study Resources</h2>
       <div class="grid md:grid-cols-3 gap-8">
         <div class="bg-white p-6 rounded-lg shadow-md transform hover:scale-105 transition duration-300">
           <h3 class="text-xl font-semibold mb-4 text-blue-600">First Year Resources</h3>
@@ -170,7 +175,7 @@
     </section>
     <section id="faculty" class="bg-gray-50 py-12 hover:bg-gray-100 transition-colors duration-300">
       <div class="max-w-6xl mx-auto px-4">
-        <h2 class="text-2xl md:text-3xl font-bold text-center text-gray-800 mb-8 hover:text-gray-900 transition-colors duration-300">Our Faculty</h2>
+        <h2 class="text-2xl md:text-3xl font-bold text-center text-gray-800 mb-8 uppercase tracking-wide animate-slideUp">Our Faculty</h2>
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           <div class="bg-white rounded-lg shadow-sm p-6 transform hover:scale-105 hover:shadow-lg transition-all duration-300 ease-in-out">
             <div class="flex flex-col items-center">
