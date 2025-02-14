@@ -33,6 +33,12 @@
                     class="w-6 h-6">
                 <span class="text-xs mt-1">Home</span>
             </a>
+            <a href="#about"
+            class="flex flex-col items-center justify-center text-gray-600 hover:text-blue-600 transition-colors duration-300">
+            <img width="24" height="24" src="https://img.icons8.com/pastel-glyph/128/info--v4.png"
+                alt="image-gallery" class="w-6 h-6">
+            <span class="text-xs mt-1">About</span>
+        </a>
             <a href="#resources"
                 class="flex flex-col items-center justify-center text-gray-600 hover:text-blue-600 transition-colors duration-300">
                 <img width="24" height="24" src="https://img.icons8.com/badges/48/saving-book.png" alt="saving-book"
@@ -45,12 +51,7 @@
                     alt="Faculty" class="w-6 h-6">
                 <span class="text-xs mt-1">Faculty</span>
             </a>
-            <a href="#gallery"
-                class="flex flex-col items-center justify-center text-gray-600 hover:text-blue-600 transition-colors duration-300">
-                <img width="24" height="24" src="https://img.icons8.com/windows/50/image-gallery.png"
-                    alt="image-gallery" class="w-6 h-6">
-                <span class="text-xs mt-1">Gallery</span>
-            </a>
+           
             <a href="#contact"
                 class="flex flex-col items-center justify-center text-gray-600 hover:text-blue-600 transition-colors duration-300">
                 <img width="24" height="24" src="https://img.icons8.com/parakeet-line/48/contact-card.png"
@@ -115,8 +116,8 @@
                         </h3>
                         <p class="text-gray-600 mb-6 leading-relaxed">
                             BCA at Government Arts And Science College, Tanur is a Full Time programme offered for a
-                            duration of 3 years. Government Arts And Science College, Tanur BCA admission is done based
-                            on scores in accepted exams (CBSE 12th and Kerala 12th).
+                            duration of 4 years. Government Arts And Science College, Tanur BCA admission is done based
+                            on scores in accepted exams (CBSE 12th and State 12th).
                         </p>
 
                         <!-- Highlights Cards -->
@@ -129,7 +130,7 @@
                             <div
                                 class="bg-white p-4 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300">
                                 <h4 class="font-semibold text-blue-600 mb-2">Eligibility</h4>
-                                <p class="text-gray-600">12th Pass (CBSE/Kerala)</p>
+                                <p class="text-gray-600">12th Pass (CBSE/State)</p>
                             </div>
                             <div
                                 class="bg-white p-4 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300">
@@ -139,13 +140,13 @@
                             <div
                                 class="bg-white p-4 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300">
                                 <h4 class="font-semibold text-blue-600 mb-2">Seats</h4>
-                                <p class="text-gray-600">35 Per Batch</p>
+                                <p class="text-gray-600">32 Per Batch</p>
                             </div>
                         </div>
 
                         <!-- Call to Action Button -->
                         <div class="mt-8">
-                            <a href="#contact"
+                            <a href="http://gctanur.ac.in/"
                                 class="inline-flex items-center px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition-colors duration-300">
                                 Contact for Admission
                                 <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-2" viewBox="0 0 20 20"
@@ -218,51 +219,55 @@
             </div>
         </section>
 
-        <!-- Faculty Section -->
-        <section id="faculty" class="bg-gray-50 py-12">
+        <section id="faculty" class="bg-gray-50 py-12 hover:bg-gray-100 transition-colors duration-300">
             <div class="max-w-6xl mx-auto px-4">
-                <h2 class="text-2xl md:text-3xl font-bold text-center text-gray-800 mb-8">Our Faculty</h2>
-
+                <h2 class="text-2xl md:text-3xl font-bold text-center text-gray-800 mb-8 hover:text-gray-900 transition-colors duration-300">Our Faculty</h2>
+                
                 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
                     <!-- Faculty Card 1 -->
-                    <div class="bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300 p-6">
+                    <div class="bg-white rounded-lg shadow-sm p-6 transform hover:scale-105 hover:shadow-lg transition-all duration-300 ease-in-out">
                         <div class="flex flex-col items-center">
-                            <img src="/api/placeholder/150/150" alt="Faculty 1"
-                                class="w-24 h-24 md:w-32 md:h-32 rounded-full object-cover mb-4">
-                            <h3 class="text-lg font-semibold text-gray-800">Dr. Sarah Johnson</h3>
-                            <p class="text-gray-600 text-sm mt-1">Department Head</p>
-                            <p class="text-gray-500 text-sm mt-1">PhD, Computer Science</p>
+                            <img src="images/sandya.jpeg" alt="Faculty 1" class="w-24 h-24 md:w-32 md:h-32 rounded-full mb-4 object-cover hover:ring-2 hover:ring-blue-500 transition-all duration-300">
+                            <h3 class="text-lg font-semibold text-gray-800 hover:text-blue-600 transition-colors duration-300">Sandya</h3>
+                            <p class="text-gray-600 text-sm mt-1">Head Of Department</p>
+                            <p class="text-gray-500 text-sm mt-1">MCA, NET</p>
                         </div>
                     </div>
-
+        
                     <!-- Faculty Card 2 -->
-                    <div class="bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300 p-6">
+                    <div class="bg-white rounded-lg shadow-sm p-6 transform hover:scale-105 hover:shadow-lg transition-all duration-300 ease-in-out">
                         <div class="flex flex-col items-center">
-                            <img src="/api/placeholder/150/150" alt="Faculty 2"
-                                class="w-24 h-24 md:w-32 md:h-32 rounded-full object-cover mb-4">
-                            <h3 class="text-lg font-semibold text-gray-800">Prof. Michael Chen</h3>
-                            <p class="text-gray-600 text-sm mt-1">Software Engineering</p>
-                            <p class="text-gray-500 text-sm mt-1">PhD, Computer Science</p>
+                            <img src="images/bineesh.jpeg" alt="Faculty 2" class="w-24 h-24 md:w-32 md:h-32 rounded-full mb-4 object-cover hover:ring-2 hover:ring-blue-500 transition-all duration-300">
+                            <h3 class="text-lg font-semibold text-gray-800 hover:text-blue-600 transition-colors duration-300">Bineesh</h3>
+                            <p class="text-gray-600 text-sm mt-1">Assistant Professor</p>
+                            <p class="text-gray-500 text-sm mt-1">MTech, NET</p>
                         </div>
                     </div>
-
+        
                     <!-- Faculty Card 3 -->
-                    <div class="bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300 p-6">
+                    <div class="bg-white rounded-lg shadow-sm p-6 transform hover:scale-105 hover:shadow-lg transition-all duration-300 ease-in-out">
                         <div class="flex flex-col items-center">
-                            <img src="/api/placeholder/150/150" alt="Faculty 3"
-                                class="w-24 h-24 md:w-32 md:h-32 rounded-full object-cover mb-4">
-                            <h3 class="text-lg font-semibold text-gray-800">Dr. Emily Wilson</h3>
+                            <img src="/api/placeholder/150/150" alt="Faculty 3" class="w-24 h-24 md:w-32 md:h-32 rounded-full mb-4 object-cover hover:ring-2 hover:ring-blue-500 transition-all duration-300">
+                            <h3 class="text-lg font-semibold text-gray-800 hover:text-blue-600 transition-colors duration-300">Dr. Emily Wilson</h3>
                             <p class="text-gray-600 text-sm mt-1">Data Science</p>
                             <p class="text-gray-500 text-sm mt-1">PhD, Data Analytics</p>
                         </div>
                     </div>
-
+        
                     <!-- Faculty Card 4 -->
-                    <div class="bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300 p-6">
+                    <div class="bg-white rounded-lg shadow-sm p-6 transform hover:scale-105 hover:shadow-lg transition-all duration-300 ease-in-out">
                         <div class="flex flex-col items-center">
-                            <img src="/api/placeholder/150/150" alt="Faculty 4"
-                                class="w-24 h-24 md:w-32 md:h-32 rounded-full object-cover mb-4">
-                            <h3 class="text-lg font-semibold text-gray-800">Prof. David Kumar</h3>
+                            <img src="/api/placeholder/150/150" alt="Faculty 4" class="w-24 h-24 md:w-32 md:h-32 rounded-full mb-4 object-cover hover:ring-2 hover:ring-blue-500 transition-all duration-300">
+                            <h3 class="text-lg font-semibold text-gray-800 hover:text-blue-600 transition-colors duration-300">Prof. David Kumar</h3>
+                            <p class="text-gray-600 text-sm mt-1">Web Technologies</p>
+                            <p class="text-gray-500 text-sm mt-1">PhD, Web Engineering</p>
+                        </div>
+                    </div>
+                    <!-- Faculty Card 4 -->
+                    <div class="bg-white rounded-lg shadow-sm p-6 transform hover:scale-105 hover:shadow-lg transition-all duration-300 ease-in-out">
+                        <div class="flex flex-col items-center">
+                            <img src="/api/placeholder/150/150" alt="Faculty 4" class="w-24 h-24 md:w-32 md:h-32 rounded-full mb-4 object-cover hover:ring-2 hover:ring-blue-500 transition-all duration-300">
+                            <h3 class="text-lg font-semibold text-gray-800 hover:text-blue-600 transition-colors duration-300">Prof. David Kumar</h3>
                             <p class="text-gray-600 text-sm mt-1">Web Technologies</p>
                             <p class="text-gray-500 text-sm mt-1">PhD, Web Engineering</p>
                         </div>
@@ -271,8 +276,7 @@
             </div>
         </section>
 
-        <!-- Include the rest of your sections here -->
-        <!-- (Resources, Faculty, Gallery, and Footer sections remain the same) -->
+        
     </div>
 
     
